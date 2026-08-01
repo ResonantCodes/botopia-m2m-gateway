@@ -1,9 +1,9 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "name": "io.github.ResonantCodes/botopia-m2m-gateway",
   "description": "Actionable API deprecation feed with severity ratings & remediation steps for Anthropic, AWS, GCP, Gemini, GitHub, OpenAI, and Stripe. Supports x402 pay-per-call micropayments & direct API keys.",
   "repository": {
-    "url": "https://github.com/ResonantCodes/botopia-m2m-gateway",
+    "url": "https://github.com/LOTG-Labs/Botopia",
     "source": "github"
   },
   "version": "1.0.0",
