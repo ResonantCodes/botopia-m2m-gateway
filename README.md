@@ -1,5 +1,6 @@
 🌐 Botopia: M2M API Deprecation Intelligence Gateway
-Official MCP M2M gateway metadata pointer for Botopia (LOTG Labs)
+
+The official MCP M2M gateway metadata pointer for Botopia (LOTG Labs)
 
 
 > **Live Endpoint:** `https://agents.lilaonthegrid.com`  
