@@ -18,9 +18,9 @@ Need an `X-API-Key` to power your AI agent pipeline? You can pre-fund a custom q
 
 Autonomous agents can query our live intelligence vaults directly via standard HTTP headers or Model Context Protocol (MCP) tool invocations ($0.07 USD per query).
 
-* **Master Intelligence Feed:** `https://agents.lilaonthegrid.com/api/v1/feed`
-* **Native MCP Discovery Endpoint:** `https://agents.lilaonthegrid.com/mcp`
-* **Interactive OpenAPI Docs:** `https://agents.lilaonthegrid.com/docs`
+* **Master Intelligence Feed:** `[https://agents.lilaonthegrid.com/api/v1/feed](https://agents.lilaonthegrid.com/api/v1/feed)`
+* **Native MCP Discovery Endpoint:** `[https://agents.lilaonthegrid.com/mcp](https://agents.lilaonthegrid.com/mcp)`
+* **Interactive OpenAPI Docs:** `[https://agents.lilaonthegrid.com/docs](https://agents.lilaonthegrid.com/docs)`
 * **Authentication Header:** `X-API-Key: your_secret_key`
 
 ---
@@ -49,10 +49,10 @@ Our automated farmers sweep official changelogs daily at **5:00 PM** to harvest 
 
 Autonomous agents can discover and inspect our endpoints dynamically:
 
-* **MCP Tool Card:** `https://agents.lilaonthegrid.com/mcp`
-* **Agent Card Manifest:** `https://agents.lilaonthegrid.com/.well-known/agent-card.json`
-* **x402 Spec Discovery:** `https://agents.lilaonthegrid.com/.well-known/x402`
-* **Crawler Policy:** `https://agents.lilaonthegrid.com/robots.txt`
+* **MCP Tool Card:** `[https://agents.lilaonthegrid.com/mcp](https://agents.lilaonthegrid.com/mcp)`
+* **Agent Card Manifest:** `[https://agents.lilaonthegrid.com/.well-known/agent-card.json](https://agents.lilaonthegrid.com/.well-known/agent-card.json)`
+* **x402 Spec Discovery:** `[https://agents.lilaonthegrid.com/.well-known/x402](https://agents.lilaonthegrid.com/.well-known/x402)`
+* **Crawler Policy:** `[https://agents.lilaonthegrid.com/robots.txt](https://agents.lilaonthegrid.com/robots.txt)`
 
 ---
 
@@ -63,10 +63,24 @@ Autonomous agents can discover and inspect our endpoints dynamically:
 {
   "mcpServers": {
     "botopia-m2m": {
-      "url": "[https://agents.lilaonthegrid.com/mcp](https://agents.lilaonthegrid.com/mcp)",
+      "url": "https://agents.lilaonthegrid.com/mcp",
       "headers": {
         "X-API-Key": "YOUR_BOTOPIA_KEY"
       }
     }
   }
 }
+```
+
+---
+
+## ⚖️ Terms, Micropayments & Legal Shield
+
+* 💳 **Pay-Per-Query Pricing:** $0.07 USD per query accessed via `X-API-Key` or `X-PAYMENT` headers.
+* 🛑 **Non-Refundable Policy:** All $0.07 query deductions and credit top-ups are strictly non-refundable once an API request or MCP tool call is executed.
+* 📜 **Terms of Service:** Full machine-readable specifications and agent policies are published at [`llms.txt`](https://agents.lilaonthegrid.com/llms.txt).
+* 🛡️ **Limitation of Liability:** All feeds and JSON payloads are provided strictly on an **"AS-IS"** and **"AS-AVAILABLE"** basis. Total aggregate liability for any claim is strictly capped at the total amount paid to Botopia during the preceding 30 days. Always verify critical deprecation timelines using the provided `documentation_url` fields before applying breaking code updates.
+
+---
+
+*Powered by LOTG Labs (Lila On The Grid) 🚀🌾*
