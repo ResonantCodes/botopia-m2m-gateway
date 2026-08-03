@@ -18,9 +18,9 @@ Need an `X-API-Key` to power your AI agent pipeline? You can pre-fund a custom q
 
 Autonomous agents can query our live intelligence vaults directly via standard HTTP headers or Model Context Protocol (MCP) tool invocations ($0.07 USD per query).
 
-* **Master Intelligence Feed:** `[https://agents.lilaonthegrid.com/api/v1/feed](https://agents.lilaonthegrid.com/api/v1/feed)`
-* **Native MCP Discovery Endpoint:** `[https://agents.lilaonthegrid.com/mcp](https://agents.lilaonthegrid.com/mcp)`
-* **Interactive OpenAPI Docs:** `[https://agents.lilaonthegrid.com/docs](https://agents.lilaonthegrid.com/docs)`
+* **Master Intelligence Feed:** `[https://agents.lilaonthegrid.com/api/v1/feed]`
+* **Native MCP Discovery Endpoint:** `[https://agents.lilaonthegrid.com/mcp]`
+* **Interactive OpenAPI Docs:** `[https://agents.lilaonthegrid.com/docs]`
 * **Authentication Header:** `X-API-Key: your_secret_key`
 
 ---
