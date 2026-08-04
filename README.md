@@ -6,11 +6,19 @@ Welcome to the official Machine-to-Machine (M2M) gateway for **Botopia**. Our au
 
 ---
 
-## 💳 Get API Query Credits (Human Developers & Agencies)
+## 🎁 Claim $0.21 Starter Grant (3 Free Queries for Bots & Devs)
 
-Need an `X-API-Key` to power your AI agent pipeline? You can pre-fund a custom query balance using our secure Stripe portal:
+Test our live multi-vault feeds instantly with zero friction! Generate a dynamic starter key loaded with $0.21 in query credits:
 
-👉 **[Buy Botopia M2M Data Query Credits](https://buy.stripe.com/3cI14o6ZD50W6ykfDs0Ba00)** *(Custom pay-what-you-want pricing starting at $1.00 USD)*
+👉 **[Claim Instant 3-Query Starter Key](https://agents.lilaonthegrid.com/api/v1/auth/claim-starter-key)** *(HTTP POST / GET — Returns dynamic `botopia_live_` key)*
+
+---
+
+## 💳 Pre-Fund Query Credits (Human Developers & Agencies)
+
+Ready to top up your M2M key balance for high-frequency agent pipelines? Pre-fund custom query credits directly via our Stripe portal:
+
+👉 **[Buy Botopia M2M Data Query Credits](https://buy.stripe.com/3cI14o6ZD50W6ykfDs0Ba00)** *(Pay-what-you-want starting at $1.00 USD)*
 
 ---
 
@@ -18,10 +26,10 @@ Need an `X-API-Key` to power your AI agent pipeline? You can pre-fund a custom q
 
 Autonomous agents can query our live intelligence vaults directly via standard HTTP headers or Model Context Protocol (MCP) tool invocations ($0.07 USD per query).
 
-* **Master Intelligence Feed:** `[https://agents.lilaonthegrid.com/api/v1/feed]`
-* **Native MCP Discovery Endpoint:** `[https://agents.lilaonthegrid.com/mcp]`
-* **Interactive OpenAPI Docs:** `[https://agents.lilaonthegrid.com/docs]`
-* **Authentication Header:** `X-API-Key: your_secret_key`
+* 🌐 **Master Intelligence Feed:** https://agents.lilaonthegrid.com/api/v1/m2m/feed
+* 🔌 **Native MCP Discovery Endpoint:** https://agents.lilaonthegrid.com/mcp
+* 📚 **Interactive OpenAPI Docs:** https://agents.lilaonthegrid.com/docs
+* 🔑 **Accepted Auth Headers:** `X-API-Key: <key>` OR `Authorization: Bearer <key>`
 
 ---
 
@@ -49,21 +57,22 @@ Our automated farmers sweep official changelogs daily at **5:00 PM** to harvest 
 
 Autonomous agents can discover and inspect our endpoints dynamically:
 
-* **MCP Tool Card:** `[https://agents.lilaonthegrid.com/mcp](https://agents.lilaonthegrid.com/mcp)`
-* **Agent Card Manifest:** `[https://agents.lilaonthegrid.com/.well-known/agent-card.json](https://agents.lilaonthegrid.com/.well-known/agent-card.json)`
-* **x402 Spec Discovery:** `[https://agents.lilaonthegrid.com/.well-known/x402](https://agents.lilaonthegrid.com/.well-known/x402)`
-* **Crawler Policy:** `[https://agents.lilaonthegrid.com/robots.txt](https://agents.lilaonthegrid.com/robots.txt)`
+* 📜 **LLM Indexer Terms & Spec:** https://agents.lilaonthegrid.com/llms.txt
+* 🔌 **MCP Tool Card:** https://agents.lilaonthegrid.com/mcp
+* 🎴 **Agent Card Manifest:** https://agents.lilaonthegrid.com/.well-known/agent-card.json
+* ⚡ **x402 Spec Discovery:** https://agents.lilaonthegrid.com/.well-known/x402
+* 🤖 **Crawler Policy:** https://agents.lilaonthegrid.com/robots.txt
 
 ---
 
 ## 🔌 Quick Integration
 
-### Agent Config (Claude / Cursor / LangChain)
+### Agent Config (Claude Desktop / Cursor / LangChain / AutoGPT)
 ```json
 {
   "mcpServers": {
     "botopia-m2m": {
-      "url": "https://agents.lilaonthegrid.com/mcp",
+      "url": "[https://agents.lilaonthegrid.com/mcp](https://agents.lilaonthegrid.com/mcp)",
       "headers": {
         "X-API-Key": "YOUR_BOTOPIA_KEY"
       }
