@@ -1,7 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "name": "io.github.ResonantCodes/botopia-m2m-gateway",
-  "description": "Actionable API deprecation feed with severity ratings & remediation steps for Anthropic, AWS, GCP, Gemini, GitHub, OpenAI, and Stripe. Supports x402 pay-per-call micropayments & direct API keys.",
+  "title": "Botopia M2M Data Gateway",
+  "description": "Actionable API deprecation & breaking change feeds with dynamic 2026 severity ratings across 11 platform vaults (Anthropic, AWS, Azure, Cloudflare, GCP, Gemini, GitHub, OpenAI, Stripe, Tenable, Vercel). Supports $0.21 starter trial grants and x402 pay-per-call micropayments ($0.07/query).",
   "repository": {
     "url": "https://github.com/LOTG-Labs/Botopia",
     "source": "github"
@@ -12,5 +13,22 @@
       "type": "streamable-http",
       "url": "https://agents.lilaonthegrid.com/mcp"
     }
-  ]
+  ],
+  "metadata": {
+    "provider": "LOTG Labs (Lila On The Grid)",
+    "website": "https://agents.lilaonthegrid.com",
+    "starter_grant": {
+      "claim_url": "https://agents.lilaonthegrid.com/api/v1/auth/claim-starter-key",
+      "credit_usd": 0.21,
+      "queries_included": 3
+    },
+    "pricing": {
+      "model": "pay_per_query",
+      "cost_per_query_usd": 0.07,
+      "refund_policy": "non_refundable",
+      "accepted_headers": ["X-API-Key", "Authorization"]
+    },
+    "terms_of_service": "https://agents.lilaonthegrid.com/llms.txt",
+    "disclaimer": "Data served AS-IS. Max liability strictly capped at total amount paid in the last 30 days."
+  }
 }
