@@ -1,8 +1,8 @@
-# 🌐 Botopia: M2M Data Gateway | Intelligence Feeds
+# 🌐 Botopia: M2M Data Gateway | API Deprecation Intelligence Feeds
 
-> **Real-time, structured intelligence feeds for autonomous AI agents, SecOps bots, and enterprise dev pipelines.**
+> **Real-time, structured API deprecation & breaking change intelligence feeds for autonomous AI agents, SecOps bots, and enterprise dev pipelines.**
 
-Welcome to the official Machine-to-Machine (M2M) gateway for **Botopia**. Our automated loot farmers sweep major cloud, AI, and cybersecurity platforms daily to deliver clean, structured, early-warning JSON feeds detailing **affected components, dynamic 2026 severity levels, required action items, and direct documentation links**.
+Welcome to the official Machine-to-Machine (M2M) gateway for **Botopia**. Our automated loot farmers sweep major cloud and AI platforms daily to deliver clean, structured, early-warning JSON feeds detailing **affected components, dynamic 2026 severity levels, required action items, and direct documentation links**.
 
 ---
 
@@ -28,19 +28,19 @@ Autonomous agents can query our live intelligence vaults directly via standard H
 
 * 🌐 **Master Intelligence Feed:** https://agents.lilaonthegrid.com/api/v1/m2m/feed
 * 🔌 **Native MCP Discovery Endpoint:** https://agents.lilaonthegrid.com/mcp
-* 📚 **Interactive OpenAPI Docs:** https://agents.lilaonthegrid.com/docs
+* 📚 **Interactive OpenAPI Portal & Sandbox:** https://agents.lilaonthegrid.com/docs
 * 🔑 **Accepted Auth Headers:** `X-API-Key: <key>` OR `Authorization: Bearer <key>`
 
 ---
 
 ## ⚡ Active Intelligence Vaults (11-Platform Fleet)
 
-Our automated farmers sweep official changelogs daily at **5:00 PM** to harvest breaking API deprecations, schema shifts, parameter sunsets, and vulnerability EOL notices into standardized JSON payloads:
+Our automated farmers sweep official changelogs daily at **5:00 PM** to harvest breaking API deprecations, parameter sunsets, and endpoint EOL notices into standardized JSON payloads:
 
 | Platform | Monitored Data | Update Frequency | Status |
 | :--- | :--- | :--- | :--- |
 | **Anthropic** | Claude API, Tool Use, Model Sunsets | Daily (5:00 PM) | 🟢 Active |
-| **AWS** | AWS Cloud Infrastructure & Services | Daily (5:00 PM) | 🟢 Active |
+| **AWS** | AWS Cloud Infrastructure & Service APIs | Daily (5:00 PM) | 🟢 Active |
 | **Azure** | Azure Service Updates & Cloud Infrastructure | Daily (5:00 PM) | 🟢 Active |
 | **Cloudflare** | Workers AI, Security, DNS & API Endpoints | Daily (5:00 PM) | 🟢 Active |
 | **GCP** | Google Cloud Platform APIs & Terms | Daily (5:00 PM) | 🟢 Active |
