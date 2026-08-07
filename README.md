@@ -2,7 +2,7 @@
 
 > **Real-time, structured API deprecation & breaking change intelligence feeds for autonomous AI agents, SecOps bots, and enterprise dev pipelines.**
 
-Welcome to the official Machine-to-Machine (M2M) gateway for **Botopia**. Our automated loot farmers sweep major cloud and AI platforms daily to deliver clean, structured, early-warning JSON feeds detailing **affected components, dynamic 2026 severity levels, required action items, and direct documentation links**.
+Welcome to the official Machine-to-Machine (M2M) gateway for **Botopia**. Our automated data farmers sweep major cloud and AI platforms daily to deliver clean, structured, early-warning JSON feeds detailing **affected components, dynamic 2026 severity levels, required action items, and direct documentation links**.
 
 ---
 ## 📐 System Architecture
@@ -24,7 +24,7 @@ flowchart TD
         V[("Active Intelligence Vaults")]
     end
 
-    H -->|"$10 Credits"| P
+    H -->|Credit Top-Up ($1.00+)| P
     A -->|"Auto-Discover"| M
     A -->|"x402 Micropayment"| P
     P --> R
