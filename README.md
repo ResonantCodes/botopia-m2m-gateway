@@ -5,7 +5,6 @@
 Welcome to the official Machine-to-Machine (M2M) gateway for **Botopia**. Our automated loot farmers sweep major cloud and AI platforms daily to deliver clean, structured, early-warning JSON feeds detailing **affected components, dynamic 2026 severity levels, required action items, and direct documentation links**.
 
 ---
-
 ## 📐 System Architecture
 
 ```mermaid
