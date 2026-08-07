@@ -29,6 +29,8 @@ flowchart TD
     A -->|x402 Micropayment| P
     P --> R
     R --> V
+
+
 ---
 
 ## 🎁 Claim $0.21 Starter Grant (3 Free Queries for Bots & Devs)
