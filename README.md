@@ -9,26 +9,26 @@ Welcome to the official Machine-to-Machine (M2M) gateway for **Botopia**. Our au
 
 ```mermaid
 flowchart TD
-subgraph Clients
-H[Human Developer]
-A[Autonomous Agent]
-end
+    subgraph Clients
+        H["Human Developer"]
+        A["Autonomous Agent"]
+    end
 
-subgraph Botopia Gateway
-M[Manifests: llms.txt / agent.json / MCP]
-P[Payment Guard: x402 / Credit Top-Up]
-R[REST API Routers]
-end
+    subgraph Botopia Gateway
+        M["Manifests: llms.txt / agent.json / MCP"]
+        P["Payment Guard: x402 / Credit Top-Up"]
+        R["REST API Routers"]
+    end
 
-subgraph Data Layer
-V[(Active Intelligence Vaults)]
-end
+    subgraph Data Layer
+        V[("Active Intelligence Vaults")]
+    end
 
-H -->|$10 Credits| P
-A -->|Auto-Discover| M
-A -->|x402 Micropayment| P
-P --> R
-R --> V
+    H -->|"$10 Credits"| P
+    A -->|"Auto-Discover"| M
+    A -->|"x402 Micropayment"| P
+    P --> R
+    R --> V
 ---
 
 ## 🎁 Claim $0.21 Starter Grant (3 Free Queries for Bots & Devs)
