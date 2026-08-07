@@ -7,7 +7,7 @@ Welcome to the official Machine-to-Machine (M2M) gateway for **Botopia**. Our au
 ---
 ## 📐 System Architecture
 
-``mermaid
+``'mermaid
 flowchart TD
     subgraph Clients
         H["Human Developer"]
@@ -28,7 +28,7 @@ flowchart TD
     A -->|"Auto-Discover"| M
     A -->|"x402 Micropayment"| P
     P --> R
-    R --> V
+    R --> V'''
 ---
 
 ## 🎁 Claim $0.21 Starter Grant (3 Free Queries for Bots & Devs)
