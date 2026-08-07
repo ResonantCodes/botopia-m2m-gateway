@@ -7,7 +7,7 @@ Welcome to the official Machine-to-Machine (M2M) gateway for **Botopia**. Our au
 ---
 ##  System Architecture
 
-''mermaid
+'''mermaid
 flowchart TD
     subgraph Clients
         H["Human Developer"]
