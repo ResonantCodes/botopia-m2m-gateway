@@ -24,7 +24,7 @@ flowchart TD
         V[("Active Intelligence Vaults")]
     end
 
-    H -->|Credit Top-Up ($1.00+)| P
+    H -->|"Credit Top-Up ($1.00+)"| P
     A -->|"Auto-Discover"| M
     A -->|"x402 Micropayment"| P
     P --> R
