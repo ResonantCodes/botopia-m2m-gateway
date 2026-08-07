@@ -5,17 +5,32 @@
 Welcome to the official Machine-to-Machine (M2M) gateway for **Botopia**. Our automated loot farmers sweep major cloud and AI platforms daily to deliver clean, structured, early-warning JSON feeds detailing **affected components, dynamic 2026 severity levels, required action items, and direct documentation links**.
 
 ---
+##  System Architecture
 
-## 📐 System Architecture
-
-```mermaid
+mermaid
 flowchart TD
-    Human["Human Developer"] -->|"$1.00+ Credits"| Payment["Payment Guard (x402 / Stripe)"]
-    Agent["Autonomous Agent"] -->|"Auto-Discover"| Manifests["Manifests (llms.txt / MCP)"]
-    Agent -->|"Micropayments"| Payment
-    Payment --> Routers["REST API Routers"]
-    Routers --> Vaults[("Active Intelligence Vaults")]
-'---'
+    subgraph Clients
+        H["Human Developer"]
+        A["Autonomous Agent"]
+    end
+
+    subgraph Botopia Gateway
+        M["Manifests: llms.txt / agent.json / MCP"]
+        P["Payment Guard: x402 / Credit Top-Up"]
+        R["REST API Routers"]
+    end
+
+    subgraph Data Layer
+        V[("Active Intelligence Vaults")]
+    end
+
+    H -->|"$10 Credits"| P
+    A -->|"Auto-Discover"| M
+    A -->|"x402 Micropayment"| P
+    P --> R
+    R --> V
+
+---
 
 ## 🎁 Claim $0.21 Starter Grant (3 Free Queries for Bots & Devs)
 
