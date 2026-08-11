@@ -24,7 +24,6 @@ curl [https://agents.lilaonthegrid.com/api/v1/auth/claim-starter-key](https://ag
   "starting_balance_usd": 0.21,
   "queries_included": 3
 }
-```
 
 Step 2: Plug Key Into Your Agent Config
 Copy your generated api_key directly into your client settings (Claude Desktop, Cursor, LangChain, or AutoGPT):
@@ -39,6 +38,7 @@ Copy your generated api_key directly into your client settings (Claude Desktop, 
     }
   }
 }
+
 ---
 
 ## 📐 System Architecture
