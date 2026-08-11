@@ -1,9 +1,45 @@
 # 🌐 Botopia: M2M Data Gateway | API Deprecation Intelligence Feeds
 
-> **Real-time, structured API deprecation & breaking change intelligence feeds for autonomous AI agents, SecOps bots, and enterprise dev pipelines.**
+> **Real-time, structured API deprecation & breaking change intelligence feeds for autonomous AI agents, SecOps bots, and enterprise dev pipelines ($0.07 USD / query).**
 
-Welcome to the official Machine-to-Machine (M2M) gateway for **Botopia**. Our automated data farmers sweep major cloud and AI platforms daily to deliver clean, structured, early-warning JSON feeds detailing **affected components, dynamic 2026 severity levels, required action items, and direct documentation links**.
+Welcome to the official Machine-to-Machine (M2M) gateway for **Botopia**. Our automated loot farmers sweep major cloud and AI platforms daily to deliver clean, structured, early-warning JSON feeds detailing **affected components, dynamic 2026 severity levels, required action items, and direct documentation links**.
 
+---
+
+## ⚡ 2-Step Quick Start: Connect Your Agent in 30 Seconds
+
+### Step 1: Claim Your Free Starter API Key ($0.21 Credit / 3 Queries)
+Click the 1-click browser link below or run the terminal command to instantly receive a key pre-loaded with $0.21 in starter query credits:
+
+👉 **[Claim Instant 3-Query Starter Key (1-Click Browser Link)](https://agents.lilaonthegrid.com/api/v1/auth/claim-starter-key)**
+
+```bash
+curl [https://agents.lilaonthegrid.com/api/v1/auth/claim-starter-key](https://agents.lilaonthegrid.com/api/v1/auth/claim-starter-key)
+
+Example Response:
+
+{
+  "success": true,
+  "message": "Welcome to Botopia Guild! 3 starter queries ($0.21 credit) have been added to your vault.",
+  "api_key": "botopia_live_2a4fa46cdfc2b1f0cb7df428d3358968",
+  "starting_balance_usd": 0.21,
+  "queries_included": 3
+}
+
+Step 2: Plug Key Into Your Agent Config
+Copy your generated api_key directly into your client settings (Claude Desktop, Cursor, LangChain, or AutoGPT):
+
+{
+  "mcpServers": {
+    "botopia-m2m": {
+      "url": "[https://agents.lilaonthegrid.com/mcp](https://agents.lilaonthegrid.com/mcp)",
+      "headers": {
+        "X-API-Key": "botopia_live_YOUR_KEY_HERE"
+      }
+    }
+  }
+}
+```
 ---
 ## 📐 System Architecture
 
@@ -15,18 +51,18 @@ flowchart TD
     end
 
     subgraph Botopia Gateway
-        M["Manifests: llms.txt / agent.json / MCP"]
-        P["Payment Guard: x402 / Credit Top-Up"]
+        M["Manifests: llms.txt / agent-card.json / MCP"]
+        P["Payment Guard: Dual-Rail Ledger / Stripe / x402"]
         R["REST API Routers"]
     end
 
     subgraph Data Layer
-        V[("Active Intelligence Vaults")]
+        V[("Active Intelligence Vaults (11 Platforms)")]
     end
 
     H -->|"Credit Top-Up ($1.00+)"| P
     A -->|"Auto-Discover"| M
-    A -->|"x402 Micropayment"| P
+    A -->|"x402 / X-API-Key Micropayment"| P
     P --> R
     R --> V
 ```
