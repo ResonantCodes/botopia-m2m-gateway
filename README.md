@@ -31,14 +31,13 @@ Copy your generated api_key directly into your client settings (Claude Desktop, 
 {
   "mcpServers": {
     "botopia-m2m": {
-      "url": "[https://agents.lilaonthegrid.com/mcp]",
+      "url": "https://agents.lilaonthegrid.com/mcp",
       "headers": {
         "X-API-Key": "botopia_live_YOUR_KEY_HERE"
       }
     }
   }
 }
-
 ---
 
 ## 📐 System Architecture
