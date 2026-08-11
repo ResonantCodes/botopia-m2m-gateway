@@ -6,8 +6,6 @@ Welcome to the official Machine-to-Machine (M2M) gateway for **Botopia**. Our au
 
 ---
 
-## ⚡ 2-Step Quick Start: Connect Your Agent in 30 Seconds
-
 ### Step 1: Claim Your Free Starter API Key ($0.21 Credit / 3 Queries)
 Click the 1-click browser link below or run the terminal command to instantly receive a key pre-loaded with $0.21 in starter query credits:
 
@@ -15,16 +13,18 @@ Click the 1-click browser link below or run the terminal command to instantly re
 
 ```bash
 curl [https://agents.lilaonthegrid.com/api/v1/auth/claim-starter-key](https://agents.lilaonthegrid.com/api/v1/auth/claim-starter-key)
+```
 
-Example Response:
-
+**Example Response:**
+```json
 {
   "success": true,
   "message": "Welcome to Botopia Guild! 3 starter queries ($0.21 credit) have been added to your vault.",
-  "api_key": "botopia_live_2a4fa46cdfc2b1f0cb7df428d3358968",
+  "api_key": "botopia_starter_EXAMPLE_KEY_12345,
   "starting_balance_usd": 0.21,
   "queries_included": 3
 }
+```
 
 Step 2: Plug Key Into Your Agent Config
 Copy your generated api_key directly into your client settings (Claude Desktop, Cursor, LangChain, or AutoGPT):
@@ -32,7 +32,7 @@ Copy your generated api_key directly into your client settings (Claude Desktop, 
 {
   "mcpServers": {
     "botopia-m2m": {
-      "url": "[https://agents.lilaonthegrid.com/mcp](https://agents.lilaonthegrid.com/mcp)",
+      "url": "[https://agents.lilaonthegrid.com/mcp]",
       "headers": {
         "X-API-Key": "botopia_live_YOUR_KEY_HERE"
       }
