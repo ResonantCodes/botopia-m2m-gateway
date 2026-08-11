@@ -25,15 +25,17 @@ curl [https://agents.lilaonthegrid.com/api/v1/auth/claim-starter-key](https://ag
   "queries_included": 3
 }
 ```
-Step 2: Plug Key Into Your Agent Config
-Copy your generated api_key directly into your client settings (Claude Desktop, Cursor, LangChain, or AutoGPT):
+### Step 2: Plug Key Into Your Agent Config
 
+Copy your generated `api_key` directly into your client settings (**Claude Desktop**, **Cursor**, **LangChain**, or **AutoGPT**):
+
+```json
 {
   "mcpServers": {
     "botopia-m2m": {
       "url": "https://agents.lilaonthegrid.com/mcp",
       "headers": {
-        "X-API-Key": "botopia_live_YOUR_KEY_HERE"
+        "X-API-Key": "botopia_starter_EXAMPLE_KEY_12345"
       }
     }
   }
