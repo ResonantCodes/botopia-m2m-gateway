@@ -40,29 +40,31 @@ Copy your generated api_key directly into your client settings (Claude Desktop, 
   }
 }
 ```
+
 ---
+```
 ## 📐 System Architecture
 
 ```mermaid
 flowchart TD
     subgraph Clients
-        H["Human Developer"]
-        A["Autonomous Agent"]
+        H[Human Developer]
+        A[Autonomous Agent]
     end
 
-    subgraph Botopia Gateway
-        M["Manifests: llms.txt / agent-card.json / MCP"]
-        P["Payment Guard: Dual-Rail Ledger / Stripe / x402"]
-        R["REST API Routers"]
+    subgraph Gateway [Botopia Gateway]
+        M[Manifests: llms.txt, agent-card.json, MCP]
+        P[Payment Guard: Dual-Rail Ledger, Stripe, x402]
+        R[REST API Routers]
     end
 
-    subgraph Data Layer
-        V[("Active Intelligence Vaults (11 Platforms)")]
+    subgraph DataLayer [Data Layer]
+        V[(Active Intelligence Vaults - 11 Platforms)]
     end
 
-    H -->|"Credit Top-Up ($1.00+)"| P
-    A -->|"Auto-Discover"| M
-    A -->|"x402 / X-API-Key Micropayment"| P
+    H -- 1-Click Starter or Stripe --> P
+    A -- Auto-Discover --> M
+    A -- X-API-Key or X-PAYMENT --> P
     P --> R
     R --> V
 ```
