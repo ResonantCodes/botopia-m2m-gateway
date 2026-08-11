@@ -12,9 +12,8 @@ Click the 1-click browser link below or run the terminal command to instantly re
 👉 **[Claim Instant 3-Query Starter Key (1-Click Browser Link)](https://agents.lilaonthegrid.com/api/v1/auth/claim-starter-key)**
 
 ```bash
-curl [https://agents.lilaonthegrid.com/api/v1/auth/claim-starter-key](https://agents.lilaonthegrid.com/api/v1/auth/claim-starter-key)
+curl https://agents.lilaonthegrid.com/api/v1/auth/claim-starter-key
 ```
-
 **Example Response:**
 ```json
 {
