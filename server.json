@@ -7,7 +7,7 @@
     "url": "https://github.com/LOTG-Labs/Botopia",
     "source": "github"
   },
-  "version": "1.0.0",
+  "version": "0.1.1",
   "remotes": [
     {
       "type": "streamable-http",
@@ -26,7 +26,7 @@
       "model": "pay_per_query",
       "cost_per_query_usd": 0.07,
       "refund_policy": "non_refundable",
-      "accepted_headers": ["X-API-Key", "Authorization"]
+      "accepted_headers": ["X-API-Key", "X-PAYMENT"]
     },
     "terms_of_service": "https://agents.lilaonthegrid.com/llms.txt",
     "disclaimer": "Data served AS-IS. Max liability strictly capped at total amount paid in the last 30 days."
