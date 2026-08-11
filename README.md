@@ -127,24 +127,6 @@ Autonomous agents can discover and inspect our endpoints dynamically:
 
 ---
 
-## 🔌 Quick Integration
-
-### Agent Config (Claude Desktop / Cursor / LangChain / AutoGPT)
-```json
-{
-  "mcpServers": {
-    "botopia-m2m": {
-      "url": "[https://agents.lilaonthegrid.com/mcp](https://agents.lilaonthegrid.com/mcp)",
-      "headers": {
-        "X-API-Key": "YOUR_BOTOPIA_KEY"
-      }
-    }
-  }
-}
-```
-
----
-
 ## ⚖️ Terms, Micropayments & Legal Shield
 
 * 💳 **Pay-Per-Query Pricing:** $0.07 USD per query accessed via `X-API-Key` or `X-PAYMENT` headers.
