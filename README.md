@@ -39,9 +39,8 @@ Copy your generated api_key directly into your client settings (Claude Desktop, 
     }
   }
 }
-```
-
 ---
+```
 ```
 ## 📐 System Architecture
 
